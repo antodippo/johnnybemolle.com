@@ -54,7 +54,8 @@
                         <ul class="nav  pull-right">
                             <li><a href="https://www.facebook.com/johnnybemolle" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
                             <li><a href="http://johnnybemolle.bandcamp.com/" target="_blank"><i class="fa fa-music"></i> Bandcamp</a></li>
-                            <!-- dcloud.com/johnnybemolle" target="_blank"><i class="fa fa-soundcloud"></i> Soundcloud</a></li> -->
+                            <li><a href="http://bit.ly/JbSpotify" target="_blank"><i class="fa fa-spotify"></i> Spotify</a></li>
+                            <li><a href="http://bit.ly/JbiTunes" target="_blank"><i class="fa fa-apple"></i> iTunes</a></li>
                             <li><a href="https://www.youtube.com/user/johnnybemolle" target="_blank"><i class="fa fa-youtube-square"></i> Youtube</a></li>
                         </ul>
                     </div>
@@ -65,46 +66,6 @@
             <!-- /.navbar-inner -->
         </div>
         <!-- /.navbar -->
-
-
-      <!--
-      <div class="container">
-          <div class="row">
-              <div class="span12" style="border-bottom: 1px dashed #EEEEEE;border-top: 1px dashed #EEEEEE;height: 3px;margin-bottom:10px;">
-                  <hr style="margin:1px 0;">
-              </div>
-          </div>
-      </div>
-
-      <div class="container TitleBg">
-          <h3 class="Padding5">
-              Johnny Bemolle è un fantomatico cantautore vagabondo di cui si sa poco o nulla.<br/>
-              Abbiamo trovato per caso le sue canzoni in una vecchia valigia, ognuna delle quali racconta di un luogo diverso.
-          </h3>
-      </div>
-      <div class="container">
-          <div class="row">
-              <div class="span12" style="border-bottom: 1px dashed #EEEEEE;border-top: 1px dashed #EEEEEE;height: 3px;margin-bottom:10px;">
-                  <hr style="margin:1px 0;">
-              </div>
-          </div>
-      </div>
-
-      <div class="container TitleBg">
-          <h3 class="Padding5" style="text-align: right;">
-              Johnny Bemolle is a mysterious vagabond musician about whom we know little or nothing.<br/>
-              We stumbled upon his songs in an old suitcase, each of which telling a story about a different place.
-          </h3>
-      </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="span12" style="border-bottom: 1px dashed #EEEEEE;border-top: 1px dashed #EEEEEE;height: 3px;">
-                    <hr style="margin:1px 0;">
-                </div>
-            </div>
-        </div>
-      -->
 
       <div class="container TitleBg">
           <h3 class="Padding5">
@@ -127,25 +88,6 @@
 
       <div class="container">
           <div class="row">
-              <!--
-              <div class="span4">
-                  <h2 class="BigHeader"><i class="fa fa-suitcase"></i> Jb</h2>
-                  <div class="well">
-                      Johnny Bemolle è un cantautore vagabondo di cui si sa poco. <br/>
-                      Abbiamo trovato per caso le sue canzoni in una vecchia valigia, ognuna ambientata in un luogo diverso
-                      e ognuna densa di persone, personaggi, atmosfere. <br/><br/>
-                      Abbiamo quindi deciso arrangiare e suonare in giro queste canzoni, fino a metterle nero su bianco,
-                      con quello che è un disco illustrato, canzone per canzone, da
-                      <a href="https://www.facebook.com/laurareillustration" target="_blank">Laura Re</a>.<br/><br/>
-                      "Jb" è un disco nudo, arrangiato principalmente con chitarra acustica, violoncello e oboe.<br/><br/>
-                      Ascoltalo, scaricalo e ordinalo su CD su Bandcamp:
-                      <a href="https://johnnybemolle.bandcamp.com/" target="_blank">
-                          johnnybemolle.bandcamp.com
-                      </a>
-                  </div>
-              </div>
-              -->
-
               <div class="span5">
                   <div class="carousel slide" id="myCarousel">
                       <div class="carousel-inner">
@@ -309,6 +251,9 @@
                       </ul>
                       <div style="padding: 9px;margin-top: -19px; border: 1px solid #ddd;" class="tab-content">
                         <div id="nextGigs" class="tab-pane active">
+                            <a href="http://www.songkick.com/artists/7919874" class="songkick-widget"
+                               data-theme="light" data-background-color="transparent"></a>
+                            <script src="//widget.songkick.com/widget.js"></script>
                         </div>
                         <div id="pastGigs" class="tab-pane">
                         </div>
@@ -422,23 +367,6 @@
 
         <script type="text/javascript">
         $(document).ready(function() {
-          //next gigs
-          $.ajax({
-            url:  "http://api.songkick.com/api/3.0/artists/7919874/calendar.json?apikey=A91a6b4GcCn3KNDO&jsoncallback=?",
-            dataType:   "jsonp",
-            success:    function(nextGigs){
-              if(nextGigs.resultsPage.totalEntries > 0) {
-                events = nextGigs["resultsPage"]["results"]["event"];
-                $.each(events, function(i, entry){
-                    $("#nextGigs").append('<i class="fa fa-calendar-check-o"></i> <a target="_blank" href="' +entry.uri+ '">'
-                      +entry.start.date+ ' @ ' +entry.venue.displayName+ ' (' +entry.venue.metroArea.displayName+ ')</a><br/>');
-                });
-              } else {
-                $("#nextGigs").append('There are no upcoming gigs.<br/><br/>' +
-                  '<a href="https://www.songkick.com/artists/7919874-johnny-bemolles" target="_blank">More info...</a>');
-              }
-            }
-          });
           //past gigs
           $.ajax({
             url:  "http://api.songkick.com/api/3.0/artists/7919874/gigography.json?apikey=A91a6b4GcCn3KNDO&jsoncallback=?&order=desc",
