@@ -368,6 +368,11 @@
 
         <script type="text/javascript">
         $(document).ready(function() {
+
+            $('#myCarousel').carousel({
+                interval: 3000
+            })
+
           //past gigs
           $.ajax({
             url:  "http://api.songkick.com/api/3.0/artists/7919874/gigography.json?apikey=A91a6b4GcCn3KNDO&jsoncallback=?&order=desc",
@@ -384,6 +389,7 @@
               $("#pastGigs").append('<br/><a href="https://www.songkick.com/artists/7919874-johnny-bemolles" target="_blank">More...</a>')
             }
           });
+
         });
         </script>
 
