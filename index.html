@@ -1,419 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Johnny Bemolle's</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="Coyier" content="">
-        <link href="css/reset.css" rel="stylesheet">
-        <!--<link href="css/bootstrap.css" rel="stylesheet"> -->
-        <link href="css/slider.css" rel="stylesheet">
-        <link href="css/jquery.tweet.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style_switch/styles1.css" title="styles1" media="screen" />
-        <link rel="alternate stylesheet" type="text/css" href="css/style_switch/styles2.css" title="styles2" media="screen" />
-        <link rel="alternate stylesheet" type="text/css" href="css/style_switch/styles3.css" title="styles5" media="screen" />
-        <link rel="alternate stylesheet" type="text/css" href="css/style_switch/styles4.css" title="styles6" media="screen" />
-        <link href="css/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Johnny Bemolle's</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="Coyier" content="">
+    <link href="css/reset.css" rel="stylesheet">
+    <!--<link href="css/bootstrap.css" rel="stylesheet"> -->
+    <link href="css/slider.css" rel="stylesheet">
+    <link href="css/jquery.tweet.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style_switch/styles1.css" title="styles1" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="css/style_switch/styles2.css" title="styles2" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="css/style_switch/styles3.css" title="styles5" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="css/style_switch/styles4.css" title="styles6" media="screen" />
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300|Poiret+One' rel='stylesheet' type='text/css'>
-    </head>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300|Poiret+One' rel='stylesheet' type='text/css'>
+</head>
 
-    <body>
+<body>
 
-      <div id="fb-root"></div>
-      <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=152170064803005";
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=152170064803005";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-        <div class="navbar navbar-fixed-top NavHeight">
-            <div class="navbar-inner NavHeight">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <a class="brand" href="index.html"><img src="img/jb-logo.png" alt="Jb Logo"></a>
-                    <div class="nav-collapse">
-                        <ul class="nav  pull-right">
-                            <li><a href="https://www.facebook.com/johnnybemolle" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
-                            <li><a href="http://johnnybemolle.bandcamp.com/" target="_blank"><i class="fa fa-music"></i> Bandcamp</a></li>
-                            <li><a href="http://bit.ly/JbSpotify" target="_blank"><i class="fa fa-spotify"></i> Spotify</a></li>
-                            <li><a href="http://bit.ly/JbiTunes" target="_blank"><i class="fa fa-apple"></i> iTunes</a></li>
-                            <li><a href="https://www.youtube.com/user/johnnybemolle" target="_blank"><i class="fa fa-youtube-square"></i> Youtube</a></li>
-                        </ul>
-                    </div>
-                    <!-- /.nav-collapse -->
-                </div>
-                <!-- /.container -->
-            </div>
-            <!-- /.navbar-inner -->
-        </div>
-        <!-- /.navbar -->
-
-      <div class="container" id="east-paris-video">
-          <div class="row">
-              <div class="span10 offset1">
-                  <div class="flex-video widescreen" style="height: 540px;">
-                      <iframe width="100%" height="100%" frameborder="0" allowfullscreen
-                              src="https://www.youtube.com/embed/TKcqxeZv6Xw?rel=0">
-                      </iframe>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-      <div class="container TitleBg">
-          <h3 class="Padding5">
-              Johnny Bemolle è un cantautore vagabondo di cui si sa poco. <br/>
-              Abbiamo trovato per caso le sue canzoni in una vecchia valigia, ognuna ambientata in un luogo diverso
-              e ognuna densa di persone, personaggi, atmosfere. <br/>
-              Abbiamo quindi deciso arrangiare e suonare in giro queste canzoni, fino a metterle nero su bianco,
-              con quello che è un disco illustrato, canzone per canzone, da
-              <a href="https://www.facebook.com/laurareillustration" target="_blank">Laura Re</a> e che si chiama "Jb".
-          </h3>
-      </div>
-
-      <div class="container">
-          <div class="row">
-              <div class="span12" style="border-bottom: 1px dashed #EEEEEE;border-top: 1px dashed #EEEEEE;height: 3px;margin-bottom:10px;">
-                  <hr style="margin:1px 0;">
-              </div>
-          </div>
-      </div>
-
-
-      <div class="container">
-
-          <div class="row">
-              <div class="span5">
-                  <div class="carousel slide" id="myCarousel">
-                      <div class="carousel-inner">
-                          <div class="item active">
-                              <img alt="" src="img/illustrazioni/cover.jpg">
-                          </div>
-                          <div class="item">
-                              <img alt="" src="img/illustrazioni/johnny.jpg">
-                              <div class="carousel-caption">
-                                  <h3>Johnny</h3>
-                              </div>
-                          </div>
-                          <div class="item">
-                              <img alt="" src="img/illustrazioni/paris.jpg">
-                              <div class="carousel-caption">
-                                  <h3>East Paris</h3>
-                              </div>
-                          </div>
-                          <div class="item">
-                              <img alt="" src="img/illustrazioni/budapest.jpg">
-                              <div class="carousel-caption">
-                                  <h3>Budapest in the rain</h3>
-                              </div>
-                          </div>
-                          <div class="item">
-                              <img alt="" src="img/illustrazioni/granada.jpg">
-                              <div class="carousel-caption">
-                                  <h3>Granada's beggars</h3>
-                              </div>
-                          </div>
-                          <div class="item">
-                              <img alt="" src="img/illustrazioni/bruges.jpg">
-                              <div class="carousel-caption">
-                                  <h3>The cripple of Bruges</h3>
-                              </div>
-                          </div>
-                          <div class="item">
-                              <img alt="" src="img/illustrazioni/scotland.jpg">
-                              <div class="carousel-caption">
-                                  <h3>Scotland</h3>
-                              </div>
-                          </div>
-                          <div class="item">
-                              <img alt="" src="img/illustrazioni/dooney.jpg">
-                              <div class="carousel-caption">
-                                  <h3>The fiddler of Dooney</h3>
-                              </div>
-                          </div>
-                          <div class="item">
-                              <img alt="" src="img/illustrazioni/camden.jpg">
-                              <div class="carousel-caption">
-                                  <h3>Last train to Camden</h3>
-                              </div>
-                          </div>
-                      </div>
-                      <a data-slide="prev" href="#myCarousel" class="left carousel-control">‹</a>
-                      <a data-slide="next" href="#myCarousel" class="right carousel-control">›</a>
-                  </div>
-              </div>
-
-              <div class="span4">
-                  <center>
-                      <iframe style="border: 0; width: 100%; height: 463px;"
-                      src="https://bandcamp.com/EmbeddedPlayer/album=2031919271/size=large/bgcol=333333/linkcol=e99708/artwork=small/transparent=true/"
-                      seamless><a href="http://johnnybemolle.bandcamp.com/album/jb">Jb by Johnny Bemolle&#39;s</a></iframe>
-                  </center>
-              </div>
-
-              <div class="span3">
-                  <br/>
-                  Ascolta, scarica e ordina il CD:<br/>
-                  <i class="fa fa-music"></i>
-                  <a href="http://bit.ly/JbBandcamp" target="_blank">Bandcamp</a>
-                  <br/><br/>
-                  Scaricalo dagli store:<br/>
-                  <i class="fa fa-apple"></i>
-                  <a href="http://bit.ly/JbiTunes" target="_blank">iTunes</a>
-                  <br/>
-                  <i class="fa fa-google"></i>
-                  <a href="http://bit.ly/JbGooglePlay" target="_blank">Google Play</a>
-                  <br/>
-                  <i class="fa fa-amazon"></i>
-                  <a href="http://bit.ly/JbAmazon" target="_blank">Amazon</a>
-                  <br/><br/>
-                  Ascoltalo in streaming:<br/>
-                  <i class="fa fa-spotify"></i>
-                  <a href="http://bit.ly/JbSpotify" target="_blank">Spotify</a>
-                  <br/>
-                  <i class="fa fa-music"></i>
-                  <a href="http://bit.ly/JbDeezer" target="_blank">Deezer</a>
-                  <br/>
-                  <i class="fa fa-soundcloud"></i>
-                  <a href="http://bit.ly/JbSoundcloud" target="_blank">Soundcloud</a>
-                  <br/>
-                  <i class="fa fa-music"></i>
-                  <a href="http://bit.ly/JbTidal" target="_blank">Tidal</a>
-                  <br/><br/>
-                  Guarda le illustrazioni:<br/>
-                  <i class="fa fa-behance-square"></i>
-                  <a href="http://bit.ly/JbBehance" target="_blank">Behance</a>
-                  <br/><br/>
-                  Leggi le recensioni e gli articoli:<br/>
-                  <i class="fa fa-stumbleupon"></i>
-                  <a href="http://bit.ly/JbStumbleUpon" target="_blank">StumbleUpon</a><br/><br/>
-              </div>
-
-          </div>
-      </div>
-
+<div class="navbar navbar-fixed-top NavHeight">
+    <div class="navbar-inner NavHeight">
         <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="index.html"><img src="img/jb-logo.png" alt="Jb Logo"></a>
+            <div class="nav-collapse">
+                <ul class="nav  pull-right">
+                    <li><a href="https://www.facebook.com/johnnybemolle" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                    <li><a href="http://johnnybemolle.bandcamp.com/" target="_blank"><i class="fa fa-music"></i> Bandcamp</a></li>
+                    <li><a href="http://bit.ly/JbSpotify" target="_blank"><i class="fa fa-spotify"></i> Spotify</a></li>
+                    <li><a href="http://bit.ly/JbiTunes" target="_blank"><i class="fa fa-apple"></i> iTunes</a></li>
+                    <li><a href="https://www.youtube.com/user/johnnybemolle" target="_blank"><i class="fa fa-youtube-square"></i> Youtube</a></li>
+                </ul>
+            </div>
+            <!-- /.nav-collapse -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.navbar-inner -->
+</div>
+<!-- /.navbar -->
+
+<div class="container" id="east-paris-video">
+    <div class="row">
+        <div class="span10 offset1">
+            <div class="flex-video widescreen" style="height: 540px;">
+                <iframe width="100%" height="100%" frameborder="0" allowfullscreen
+                        src="https://www.youtube.com/embed/TKcqxeZv6Xw?rel=0">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container TitleBg">
+    <h3 class="Padding5">
+        Johnny Bemolle is a vagabond songwriter of whom little is known. <br/>
+        We found his songs by chance in an old suitcase, each set in a different place
+        and each one full of people, characters, atmospheres. <br/>
+        So we decided to arrange and play these songs around, and to put them in a record,
+        illustrated, song by song, by
+        <a href="https://www.facebook.com/laurareillustration" target="_blank">Laura Re</a> and called "Jb".
+    </h3>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="span12" style="border-bottom: 1px dashed #EEEEEE;border-top: 1px dashed #EEEEEE;height: 3px;margin-bottom:10px;">
+            <hr style="margin:1px 0;">
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="span5">
+            <div class="carousel slide" id="myCarousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img alt="" src="img/illustrazioni/cover.jpg">
+                    </div>
+                    <div class="item">
+                        <img alt="" src="img/illustrazioni/johnny.jpg">
+                        <div class="carousel-caption">
+                            <h3>Johnny</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img alt="" src="img/illustrazioni/paris.jpg">
+                        <div class="carousel-caption">
+                            <h3>East Paris</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img alt="" src="img/illustrazioni/budapest.jpg">
+                        <div class="carousel-caption">
+                            <h3>Budapest in the rain</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img alt="" src="img/illustrazioni/granada.jpg">
+                        <div class="carousel-caption">
+                            <h3>Granada's beggars</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img alt="" src="img/illustrazioni/bruges.jpg">
+                        <div class="carousel-caption">
+                            <h3>The cripple of Bruges</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img alt="" src="img/illustrazioni/scotland.jpg">
+                        <div class="carousel-caption">
+                            <h3>Scotland</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img alt="" src="img/illustrazioni/dooney.jpg">
+                        <div class="carousel-caption">
+                            <h3>The fiddler of Dooney</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img alt="" src="img/illustrazioni/camden.jpg">
+                        <div class="carousel-caption">
+                            <h3>Last train to Camden</h3>
+                        </div>
+                    </div>
+                </div>
+                <a data-slide="prev" href="#myCarousel" class="left carousel-control">‹</a>
+                <a data-slide="next" href="#myCarousel" class="right carousel-control">›</a>
+            </div>
+        </div>
+
+        <div class="span4">
+            <center>
+                <iframe style="border: 0; width: 100%; height: 463px;"
+                        src="https://bandcamp.com/EmbeddedPlayer/album=2031919271/size=large/bgcol=333333/linkcol=e99708/artwork=small/transparent=true/"
+                        seamless><a href="http://johnnybemolle.bandcamp.com/album/jb">Jb by Johnny Bemolle&#39;s</a></iframe>
+            </center>
+        </div>
+
+        <div class="span3">
             <br/>
-            <div class="row">
-                <div class="span6">
-                    <h2 class="BigHeader"><i class="fa fa-globe"></i> Links</h2>
-                    <div class="well">
-                        <p>
-                            <b>Follow us</b>
-                            <br/>
-                            <i class="fa fa-facebook-square"></i>
-                            <a href="https://www.facebook.com/johnnybemolle" target="_blank">facebook.com/johnnybemolle</a>
-                            <br/>
-                            <i class="fa fa-instagram"></i>
-                            <a href="https://www.instagram.com/johnnybemolle" target="_blank">instagram.com/johnnybemolle</a>
-                            <br/>
-                            <i class="fa fa-twitter"></i>
-                            <a href="https://www.twitter.com/johnnybemolle" target="_blank">twitter.com/johnnybemolle</a>
-                            <br/><br/>
+            Listen, download and order CD:<br/>
+            <i class="fa fa-music"></i>
+            <a href="http://bit.ly/JbBandcamp" target="_blank">Bandcamp</a>
+            <br/><br/>
+            Download it from online stores:<br/>
+            <i class="fa fa-apple"></i>
+            <a href="http://bit.ly/JbiTunes" target="_blank">iTunes</a>
+            <br/>
+            <i class="fa fa-google"></i>
+            <a href="http://bit.ly/JbGooglePlay" target="_blank">Google Play</a>
+            <br/>
+            <i class="fa fa-amazon"></i>
+            <a href="http://bit.ly/JbAmazon" target="_blank">Amazon</a>
+            <br/><br/>
+            Listen in streaming:<br/>
+            <i class="fa fa-spotify"></i>
+            <a href="http://bit.ly/JbSpotify" target="_blank">Spotify</a>
+            <br/>
+            <i class="fa fa-music"></i>
+            <a href="http://bit.ly/JbDeezer" target="_blank">Deezer</a>
+            <br/>
+            <i class="fa fa-soundcloud"></i>
+            <a href="http://bit.ly/JbSoundcloud" target="_blank">Soundcloud</a>
+            <br/>
+            <i class="fa fa-music"></i>
+            <a href="http://bit.ly/JbTidal" target="_blank">Tidal</a>
+            <br/><br/>
+            Watch illlustrations:<br/>
+            <i class="fa fa-behance-square"></i>
+            <a href="http://bit.ly/JbBehance" target="_blank">Behance</a>
+            <br/><br/>
+        </div>
 
-                            <b>Listen to us</b>
-                            <br/>
-                            <i class="fa fa-music"></i>
-                            <a href="http://johnnybemolle.bandcamp.com/" target="_blank">johnnybemolle.bandcamp.com</a>
-                            <br/>
-                            <i class="fa fa-soundcloud"></i>
-                            <a href="https://www.soundcloud.com/johnnybemolle" target="_blank">soundcloud.com/johnnybemolle</a>
-                            <br/><br/>
+    </div>
+</div>
 
-                            <b>Watch us</b>
-                            <br/>
-                            <i class="fa fa-youtube-square"></i>
-                            <a href="https://www.youtube.com/user/johnnybemolle" target="_blank">youtube.com/user/johnnybemolle</a>
-                            <br/><br/>
-
-                            <b>Contact us</b>
-                            <br/>
-                            <i class="fa fa-envelope"></i>
-                            <a href="mailto:johnnybemolle@gmail.com"  target="_blank">johnnybemolle@gmail.com</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="span6">
-                    <h2 class="BigHeader"><i class="fa fa-calendar"></i> Live</h2>
-                    <div style="margin-bottom: 18px;" class="tabbable">
-                      <ul class="nav nav-tabs">
-                        <li class="active">
-                          <a data-toggle="tab" href="#nextGigs">Next</a>
-                        </li>
-                        <li class="">
-                          <a data-toggle="tab" href="#pastGigs">Past</a>
-                        </li>
-                      </ul>
-                      <div style="padding: 9px;margin-top: -19px; border: 1px solid #ddd;" class="tab-content">
-                        <div id="nextGigs" class="tab-pane active">
-                            <a href="http://www.songkick.com/artists/7919874" class="songkick-widget"
-                               data-theme="light" data-background-color="transparent"></a>
-                            <script src="//widget.songkick.com/widget.js"></script>
-                        </div>
-                        <div id="pastGigs" class="tab-pane">
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <!--
-                <div class="span4">
-                    <h2 class="BigHeader"><i class="fa fa-music"></i> Music</h2>
-                    <iframe style="border: 0; width: 350px; height: 307px;" src="https://bandcamp.com/EmbeddedPlayer/album=2722119836/size=large/bgcol=ffffff/linkcol=e99708/artwork=none/transparent=true/" seamless><a href="http://johnnybemolle.bandcamp.com/album/one-way-ep">One-way EP by Johnny Bemolle&#39;s</a></iframe>
-                </div>
-                -->
-            </div>
-
-            <div class="container">
-                <div class="row">
+<div class="container">
+    <br/>
+    <div class="row">
+        <div class="span6">
+            <h2 class="BigHeader"><i class="fa fa-globe"></i> Links</h2>
+            <div class="well">
+                <p>
+                    <b>Follow us</b>
                     <br/>
-                    <div class="span12" style="border-bottom: 1px dashed #EEEEEE;border-top: 1px dashed #EEEEEE;height: 3px;margin-bottom:10px;">
-                        <hr style="margin:1px 0;">
-                    </div>
-                </div>
-            </div>
+                    <i class="fa fa-facebook-square"></i>
+                    <a href="https://www.facebook.com/johnnybemolle" target="_blank">facebook.com/johnnybemolle</a>
+                    <br/>
+                    <i class="fa fa-instagram"></i>
+                    <a href="https://www.instagram.com/johnnybemolle" target="_blank">instagram.com/johnnybemolle</a>
+                    <br/>
+                    <i class="fa fa-twitter"></i>
+                    <a href="https://www.twitter.com/johnnybemolle" target="_blank">twitter.com/johnnybemolle</a>
+                    <br/><br/>
 
-            <div class="row">
-                <div class="span6">
-                    <h2 class="BigHeader"><i class="fa fa-facebook-square"></i> News</h2>
-                    <div class="fb-page" data-href="https://www.facebook.com/johnnybemolle/" data-tabs="timeline" data-width="600" data-height="500"
-                    data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                      <div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/johnnybemolle/">
-                        <a href="https://www.facebook.com/johnnybemolle/">Johnny Bemolle&#039;s</a></blockquote>
-                      </div>
+                    <b>Listen to us</b>
+                    <br/>
+                    <i class="fa fa-music"></i>
+                    <a href="http://johnnybemolle.bandcamp.com/" target="_blank">johnnybemolle.bandcamp.com</a>
+                    <br/>
+                    <i class="fa fa-soundcloud"></i>
+                    <a href="https://www.soundcloud.com/johnnybemolle" target="_blank">soundcloud.com/johnnybemolle</a>
+                    <br/><br/>
+
+                    <b>Watch us</b>
+                    <br/>
+                    <i class="fa fa-youtube-square"></i>
+                    <a href="https://www.youtube.com/user/johnnybemolle" target="_blank">youtube.com/user/johnnybemolle</a>
+                    <br/><br/>
+
+                    <b>Contact us</b>
+                    <br/>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:johnnybemolle@gmail.com"  target="_blank">johnnybemolle@gmail.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="span6">
+            <h2 class="BigHeader"><i class="fa fa-calendar"></i> Live</h2>
+            <div style="margin-bottom: 18px;" class="tabbable">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a data-toggle="tab" href="#nextGigs">Next</a>
+                    </li>
+                    <li class="">
+                        <a data-toggle="tab" href="#pastGigs">Past</a>
+                    </li>
+                </ul>
+                <div style="padding: 9px;margin-top: -19px; border: 1px solid #ddd;" class="tab-content">
+                    <div id="nextGigs" class="tab-pane active">
+                        <a href="http://www.songkick.com/artists/7919874" class="songkick-widget"
+                           data-theme="light" data-background-color="transparent"></a>
+                        <script src="//widget.songkick.com/widget.js"></script>
                     </div>
-                </div>
-                <div class="span6">
-                    <!--
-                    <div class="row">
-                        <h2 class="BigHeader"><i class="fa fa-newspaper-o"></i> Press, radio, interviews</h2>
-                        <div class="well">
-                            Reviews<br/>
-                            <i class="fa fa-newspaper-o"></i>
-                            Lester: <a href="http://lester.roma.it/johnny-bemolles/" target="_blank">http://lester.roma.it/johnny-bemolles/</a><br/>
-                            <i class="fa fa-newspaper-o"></i>
-                            RockIT, One-way EP: <a href="http://www.rockit.it/recensione/28637/johnnybemolle-one-way-ep" target="_blank">http://www.rockit.it/recensione/28637/johnnyb...</a><br/>
-                            <i class="fa fa-newspaper-o"></i>
-                            RockIT, Irishuke EP: <a href="http://www.rockit.it/recensione/29763/johnnybemolle-the-irishuke-ep" target="_blank">http://www.rockit.it/recensione/29763/johnnybe...</a><br/>
-                            <br/>
-                            Live + interviews<br/>
-                            <i class="fa fa-play-circle-o"></i>
-                            Radio Bombay: <a href="https://www.mixcloud.com/antodippo/johnny-bemolles-bombay-raiser-21415" target="_blank">https://www.mixcloud.com/antodippo/johnny-bemol...</a><br/>
-                            <i class="fa fa-play-circle-o"></i>
-                            Rock AM, Radio popolare: <a href="https://www.mixcloud.com/Rock_AM/the-johnny-bemolles-live-set-intervista-di-antonietta-gravante-e-vanessa-biagiotti/" target="_blank">https://www.mixcloud.com/Rock_AM/the-johnny-bemo...</a><br/>
-                            <i class="fa fa-play-circle-o"></i>
-                            Late Nate Show: <a href="https://www.mixcloud.com/antodippo/johnny-bemolles-late-nate-show-8415" target="_blank">https://www.mixcloud.com/antodippo/johnny-bemoll...</a><br/>
-                            <i class="fa fa-play-circle-o"></i>
-                            Radio Sardegna Web: <a href="http://www.radiosardegnaweb.csmwebmedia.com/patamu-radio-sardegna-web-conosciamo-i-johnny-bemolles/" target="_blank">http://www.radiosardegnaweb.csmwebmedia.com/patamu-r...</a><br/>
-                            <br/>
-                            Interviews<br/>
-                            <i class="fa fa-question-circle"></i>
-                            Jamendo blog: <a href="http://blog.jamendo.com/2014/11/the-johnny-bemolle-s-ep-interview.html" target="_blank">http://blog.jamendo.com/2014/11/the-johnny-...</a><br/>
-                            <i class="fa fa-question-circle"></i>
-                            Artista del mese Patamu: <a href="https://www.patamu.com/index.php/it/patamu/item/236-johnny-bemolle-s-artista-patamu-del-mese-giugno-2015" target="_blank">https://www.patamu.com/index.php/it/patamu/it...</a>
-                        </div>
-                    </div>
-                    -->
-                    <div class="row">
-                        <br/>
-                        <div class="span5" style="border-bottom: 1px dashed #EEEEEE;border-top: 1px dashed #EEEEEE;height: 3px;margin-bottom:10px;">
-                            <hr style="margin:1px 0;">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <h2 class="BigHeader"><i class="fa fa-youtube-play"></i> Videos</h2>
-                        <iframe width="100%" height="370" src="https://www.youtube.com/embed/videoseries?list=PLBO2-LqyyV0bfF-b55gj5-lvW7LZ74wPN" frameborder="0" allowfullscreen></iframe>
+                    <div id="pastGigs" class="tab-pane">
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <br/>
-        <div class="container">
+    <div class="container">
+        <div class="row">
+            <br/>
+            <div class="span12" style="border-bottom: 1px dashed #EEEEEE;border-top: 1px dashed #EEEEEE;height: 3px;margin-bottom:10px;">
+                <hr style="margin:1px 0;">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span6">
+            <h2 class="BigHeader"><i class="fa fa-facebook-square"></i> News</h2>
+            <div class="fb-page" data-href="https://www.facebook.com/johnnybemolle/" data-tabs="timeline" data-width="600" data-height="500"
+                 data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                <div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/johnnybemolle/">
+                    <a href="https://www.facebook.com/johnnybemolle/">Johnny Bemolle&#039;s</a></blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="span6">
             <div class="row">
-                <div class="span12" style="border-bottom: 1px dashed #EEEEEE;border-top: 1px dashed #EEEEEE;height: 3px;">
+                <br/>
+                <div class="span5" style="border-bottom: 1px dashed #EEEEEE;border-top: 1px dashed #EEEEEE;height: 3px;margin-bottom:10px;">
                     <hr style="margin:1px 0;">
                 </div>
             </div>
-        </div>
-
-        <div class="container">
-            <br/>
             <div class="row">
-                <div class="span12">
-                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
-                        <img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
-                    </a> Johnny Bemolle's 2017
-                </div>
+                <h2 class="BigHeader"><i class="fa fa-youtube-play"></i> Videos</h2>
+                <iframe width="100%" height="370" src="https://www.youtube.com/embed/videoseries?list=PLBO2-LqyyV0bfF-b55gj5-lvW7LZ74wPN" frameborder="0" allowfullscreen></iframe>
             </div>
-            <br/>
         </div>
+    </div>
+</div>
 
-        <script src="js/jquery-1.7.2.min.js"></script>
-        <script type='text/javascript' src='js/slider/jquery.mobile.customized.min.js'></script>
-        <!--Slider -->
-        <script type='text/javascript' src='js/slider/jquery.easing.1.3.js'></script>
-        <!--Slider -->
-        <script type='text/javascript' src='js/slider/slider.js'></script>
-        <!--Slider -->
-        <script src="js/my_script.js"></script>
-        <script type="text/javascript" src="js/styleswitch.js"></script>
-        <!--Style Switch -->
-        <script type="text/javascript" src="js/jquery.tweet.min.js"></script>
-        <!--Twitter -->
-        <script src="js/bootstrap.min.js"></script>
+<br/>
+<div class="container">
+    <div class="row">
+        <div class="span12" style="border-bottom: 1px dashed #EEEEEE;border-top: 1px dashed #EEEEEE;height: 3px;">
+            <hr style="margin:1px 0;">
+        </div>
+    </div>
+</div>
 
-        <script type="text/javascript">
-        $(document).ready(function() {
+<div class="container">
+    <br/>
+    <div class="row">
+        <div class="span12">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+                <img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+            </a> Johnny Bemolle's 2019
+        </div>
+    </div>
+    <br/>
+</div>
 
-            var now = new Date();
-            var eastParisDate = new Date('2017-10-16 00:00:00');
-            if (now < eastParisDate) {
-                $('#east-paris-video').hide(0);
-            }
+<script src="js/jquery-1.7.2.min.js"></script>
+<script type='text/javascript' src='js/slider/jquery.mobile.customized.min.js'></script>
+<!--Slider -->
+<script type='text/javascript' src='js/slider/jquery.easing.1.3.js'></script>
+<!--Slider -->
+<script type='text/javascript' src='js/slider/slider.js'></script>
+<!--Slider -->
+<script src="js/my_script.js"></script>
+<script type="text/javascript" src="js/styleswitch.js"></script>
+<!--Style Switch -->
+<script type="text/javascript" src="js/jquery.tweet.min.js"></script>
+<!--Twitter -->
+<script src="js/bootstrap.min.js"></script>
 
-            $('#myCarousel').carousel({
-                interval: 3000
-            });
+<script type="text/javascript">
+    $(document).ready(function() {
 
-          //past gigs
-          $.ajax({
+        var now = new Date();
+        var eastParisDate = new Date('2017-10-16 00:00:00');
+        if (now < eastParisDate) {
+            $('#east-paris-video').hide(0);
+        }
+
+        $('#myCarousel').carousel({
+            interval: 3000
+        });
+
+        //past gigs
+        $.ajax({
             url:  "http://api.songkick.com/api/3.0/artists/7919874/gigography.json?apikey=A91a6b4GcCn3KNDO&jsoncallback=?&order=desc",
             dataType:   "jsonp",
             success:    function(pastGigs){
-              var events = pastGigs["resultsPage"]["results"]["event"].slice(0,10);
-              $.each(events, function(i, entry){
-                var d = new Date(entry.start.datetime);
-                var datestring = ("0" + d.getDate()).slice(-2) + "/" + ("0"+(d.getMonth()+1)).slice(-2) + "/" +
-                    d.getFullYear() + " " + ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2);
-                $("#pastGigs").append('<i class="fa fa-calendar-times-o"></i> ' +datestring+ ' @ <a target="_blank" href="'
-                    +entry.uri+ '">' +entry.venue.displayName+ ' (' +entry.venue.metroArea.displayName+ ')</a><br/>');
-              });
-              $("#pastGigs").append('<br/><a href="https://www.songkick.com/artists/7919874-johnny-bemolles" target="_blank">More...</a>')
+                var events = pastGigs["resultsPage"]["results"]["event"].slice(0,10);
+                $.each(events, function(i, entry){
+                    var d = new Date(entry.start.datetime);
+                    var datestring = ("0" + d.getDate()).slice(-2) + "/" + ("0"+(d.getMonth()+1)).slice(-2) + "/" +
+                        d.getFullYear() + " " + ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2);
+                    $("#pastGigs").append('<i class="fa fa-calendar-times-o"></i> ' +datestring+ ' @ <a target="_blank" href="'
+                        +entry.uri+ '">' +entry.venue.displayName+ ' (' +entry.venue.metroArea.displayName+ ')</a><br/>');
+                });
+                $("#pastGigs").append('<br/><a href="https://www.songkick.com/artists/7919874-johnny-bemolles" target="_blank">More...</a>')
             }
-          });
-
         });
-        </script>
 
-    </body>
+    });
+</script>
+
+</body>
 
 </html>
